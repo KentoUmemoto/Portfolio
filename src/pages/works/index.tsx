@@ -1,5 +1,5 @@
 import { Link } from '@/router'
-import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import { Helmet } from 'react-helmet-async'
 
 const works = [
@@ -9,16 +9,15 @@ const works = [
 
 export default function Works() {
   return (
-    <>
+    <div className='flex flex-col min-h-screen'>
       <Helmet>
         <title>Works</title>
       </Helmet>
-      <Header />
-      <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full min-h-screen'>
-        <div className='grid grid-cols-2 gap-4'>
+      <div className='container mx-auto sm:px-24 sm:py-16 px-4 py-8 w-full flex-1'>
+        <div className='grid md:grid-cols-2 gap-4'>
           {works.map((work) => {
             return (
-              <div className='card p-4'>
+              <div className='card p-4' key={work.slug}>
                 <div className='card-body'>
                   <div className='card-title'>{work.slug}</div>
                   <p>{work.text}</p>
@@ -38,6 +37,7 @@ export default function Works() {
           })}
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }

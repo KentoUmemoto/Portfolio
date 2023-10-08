@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { useMatch } from 'react-router-dom'
 import { useParams } from '@/router'
-import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 import PORTFOLIO from '@/data/works/portfolio.mdx'
 import REMINDER from '@/data/works/reminder.mdx'
 
@@ -33,11 +33,11 @@ type Props = {
 
 function Wrapper({ children }: Props) {
   return (
-    <>
-      <Header />
-      <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full min-h-screen'>
+    <div className='flex flex-col min-h-screen'>
+      <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full flex-1'>
         <div className='prose prose-headings:mt-2 prose-headings:mb-4'>{children}</div>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
