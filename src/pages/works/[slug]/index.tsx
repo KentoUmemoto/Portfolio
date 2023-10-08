@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import { useMatch } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { useParams } from '@/router'
 import { Footer } from '@/components/Footer'
 import PORTFOLIO from '@/data/works/portfolio.mdx'
@@ -19,6 +20,9 @@ export default function Slug() {
     const SomeComponent = works[slug]
     return (
       <Wrapper>
+        <Helmet>
+          <title>{slug} - Works</title>
+        </Helmet>
         <SomeComponent />
       </Wrapper>
     )
