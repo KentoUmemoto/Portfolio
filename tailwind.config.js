@@ -13,4 +13,7 @@ export default {
     iconsPlugin({ collections: getIconCollections(['logos', 'lucide']) }),
     typography,
   ],
+  daisyui: {
+    themes: ['corporate', 'business'],
+  },
 }

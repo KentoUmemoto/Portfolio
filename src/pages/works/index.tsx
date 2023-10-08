@@ -14,7 +14,7 @@ export default function Works() {
         <div className='grid grid-cols-2 gap-4'>
           {works.map((work) => {
             return (
-              <div className='card shadow-sm p-4'>
+              <div className='card p-4'>
                 <div className='card-body'>
                   <div className='card-title'>{work.slug}</div>
                   <p>{work.text}</p>
@@ -23,7 +23,7 @@ export default function Works() {
                       to={'/works/:slug'}
                       params={{ slug: work.slug }}
                       role='button'
-                      className='btn btn-primary'
+                      className='btn btn-secondary'
                     >
                       View
                     </Link>
