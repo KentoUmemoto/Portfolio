@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import '@/index.css'
 
 export const Catch = () => {
@@ -14,9 +15,11 @@ export default function App() {
   }, [])
   return (
     <>
-      <div className={'min-h-screen w-full bg-base-200'}>
-        <Outlet />
-      </div>
+      <HelmetProvider>
+        <div className={'min-h-screen w-full bg-base-200'}>
+          <Outlet />
+        </div>
+      </HelmetProvider>
     </>
   )
 }

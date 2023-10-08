@@ -36,7 +36,7 @@ function Wrapper({ children }: Props) {
     <>
       <Header />
       <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full min-h-screen'>
-        {children}
+        <div className='prose prose-headings:mt-2 prose-headings:mb-4'>{children}</div>
       </div>
     </>
   )

@@ -1,9 +1,13 @@
 import { Link } from '@/router'
 import { TerminalController } from '@/components/TerminalController'
+import { Helmet } from 'react-helmet-async'
 
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <title>KentoUmemoto</title>
+      </Helmet>
       <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full min-h-screen grid lg:grid-cols-2 grid-cols-1 lg:grid-rows-4 content-start'>
         <div className='lg:col-span-2'>
           <h1 className='text-5xl font-bold'>Kento Umemoto</h1>
