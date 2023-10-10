@@ -39,7 +39,9 @@ function Wrapper({ children }: Props) {
   return (
     <div className='flex flex-col min-h-screen'>
       <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full flex-1'>
-        <div className='prose prose-headings:mt-2 prose-headings:mb-4'>{children}</div>
+        <div className='prose prose-headings:mt-2 prose-headings:mb-4 max-w-full'>
+          {children}
+        </div>
       </div>
       <Footer />
     </div>

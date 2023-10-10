@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async'
 
 const works = [
   { slug: 'portfolio', text: 'このポートフォリオです' },
-  { slug: 'reminder', text: 'シンプルなリマインダー' },
+  { slug: 'reminder', text: 'シンプルなリマインダーアプリケーションです' },
 ]
 
 export default function Works() {
@@ -17,7 +17,7 @@ export default function Works() {
         <div className='grid md:grid-cols-2 gap-4'>
           {works.map((work) => {
             return (
-              <div className='card p-4' key={work.slug}>
+              <div className='card p-4 animate-fade-in-top' key={work.slug}>
                 <div className='card-body'>
                   <div className='card-title'>{work.slug}</div>
                   <p>{work.text}</p>
