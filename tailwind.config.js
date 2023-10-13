@@ -10,7 +10,7 @@ export default {
       animation: {
         'fade-in-left':
           'fade-in-left 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
-        'fade-in-top': 'fade-in-top 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
+        'fade-in-top': 'fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both',
       },
       keyframes: {
         'fade-in-left': {
