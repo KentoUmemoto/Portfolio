@@ -8,7 +8,7 @@ export default function About() {
       <Helmet>
         <title>About - KentoUmemoto</title>
       </Helmet>
-      <div className='container mx-auto sm:px-24 sm:py-16 px-8 py-8 w-full flex-1'>
+      <div className='container mx-auto sm:px-24 px-8 pt-8 w-full flex-1'>
         <div className='prose prose-headings:mt-2 prose-headings:mb-4 max-w-full'>
           <ABOUT />
         </div>
