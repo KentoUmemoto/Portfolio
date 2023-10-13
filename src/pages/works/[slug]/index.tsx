@@ -5,12 +5,14 @@ import { useParams } from '@/router'
 import { Footer } from '@/components/Footer'
 import PORTFOLIO from '@/data/works/portfolio.mdx'
 import REMINDER from '@/data/works/reminder.mdx'
+import DISCORDBOT from '@/data/works/discord-bot.mdx'
 
 const works: {
   [K: string]: () => JSX.Element
 } = {
   portfolio: PORTFOLIO,
   reminder: REMINDER,
+  'discord-bot': DISCORDBOT,
 }
 
 export default function Slug() {

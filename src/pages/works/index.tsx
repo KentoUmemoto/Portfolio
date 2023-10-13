@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async'
 const works = [
   { slug: 'portfolio', text: 'このポートフォリオです' },
   { slug: 'reminder', text: 'シンプルなリマインダーアプリケーションです' },
+  { slug: 'discord-bot', text: 'Discord上で動作するチャット読み上げbotです' },
 ]
 
 export default function Works() {
