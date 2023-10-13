@@ -1,6 +1,15 @@
 # Portfolio
+ポートフォリオサイトです。  
+自分の制作物などを公開するためのサイトです。
 
-## dev
+## 構成
+- Typescript
+- vite
+- react
+- tailwindcss
+- daisyUI
+
+## development
 ### install
 ```bash
 npm install
@@ -9,3 +18,6 @@ npm install
 ```bash
 npm run dev
 ```
+
+## deployment
+Github Actionsで`main`ブランチにpushされるとbuildされてGithub pagesに公開されるようになっています。
